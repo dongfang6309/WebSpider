@@ -1,5 +1,6 @@
 # coding=UTF-8<code>
 import json
+import time
 
 j = '{"name": "张佳豪", "age": 25, "Univ.": "Zhejiang Univ."}'
 d = json.loads(j)
