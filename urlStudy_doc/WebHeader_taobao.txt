@@ -1,0 +1,13 @@
+{"authority": "s.taobao.com",
+"method": "GET",
+"scheme": "https",
+"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+"accept-encoding": "gzip, deflate, br",
+"accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+"cache-control": "max-age=0",
+"sec-fetch-mode": "navigate",
+"sec-fetch-site": "same-origin",
+"sec-fetch-user": "?1",
+"upgrade-insecure-requests": "1",
+"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
+"cookie": "thw=cn; cna=d0cSFed4s0ACAXrh3LEszsHO; tracknick=%5Cu5F20%5Cu4F73%5Cu8C6A222; tg=0; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0%26__ll%3D-1%26_ato%3D0; miid=1237888619423448527; enc=9WUn9JCdZEzI%2FCmnj3qNFApjaq2IW5gF%2F%2F4LcK0rnxyTnB1qySkFUrbuFuTBLZFSd57Ysatbhp8W%2BUYrNcLvVQ%3D%3D; hng=CN%7Czh-CN%7CCNY%7C156; t=0473a19e634a2c8cb0243aaf84c20058; lgc=%5Cu5F20%5Cu4F73%5Cu8C6A222; UM_distinctid=16dfcef208817c-04cb6455617535-541d3410-1fa400-16dfcef208992b; tk_trace=oTRxOWSBNwn9dPyorMJE%2FoPdY8zZPEr%2FCrvCMS%2BG3sTRRWrQ%2BVVTl09ME1KrXdet2cojdqs4qKNBRfTST7zzV%2B%2BYilkuJNbj55Amz5%2Bl7GbsoljhjWOYdb8vWZhsIJdFJL7Ft0IqY0xAZMMK4AH0wwP7KN53bWi3d5BpQ4MfdJrMEyDfEEgEBM3%2FqX9UJ%2Fm2ueOJMvKbWuroWPkxwpLjAuBEXH%2BmpbLy1lKMk%2BvOiombBiPuCRQbgL2vbe8grdQxJdqLc9azK2JMxBlNLL0GgjfhGuhXmQkEoDDcvtvcdXlB%2FjXQJxkVQDEJT5JDqdy1IVa1eXFRNY4qjs%2FO7A%3D%3D; v=0; cookie2=711acceeee2a86d11fc162e4bf252ff7; _tb_token_=39b347811ed6; alitrackid=www.taobao.com; dnk=%5Cu5F20%5Cu4F73%5Cu8C6A222; _cc_=URm48syIZQ%3D%3D; uc3=lg2=VFC%2FuZ9ayeYq2g%3D%3D&nk2=ttQ4gItxRZb7&id2=UoH2jli8djGY5A%3D%3D&vt3=F8dByuWgmtuokZTWXTI%3D; csg=a25a0989; skt=0f3127e430031082; existShop=MTU3NDEzNDA5MA%3D%3D; uc4=id4=0%40UOnpKdXw%2BWJFMLcw1S4lVlc0H33c&nk4=0%40tAKMZv%2FJFfDszFRVCAqzB%2FeUACM%3D; lastalitrackid=www.taobao.com; _uab_collina=157458174545695300675573; mt=ci=-1_0; JSESSIONID=FC3C715F2DFA2EFC193D18F085025C57; l=dBMmBdnrvpdP7o8CBOCwourza77OSIRAguPzaNbMi_5wW6L11nQOk3WpWFp6VjWfG1YB47QTYme9-etkmEy06Pt-g3fPaxDc.; isg=BFhY9u7csd204JwsFW9SmOLNKYY0jK5zJ1ndQJJJpBNGLfgXOlGMW24PZSW4PXSj; uc1=cookie16=UIHiLt3xCS3yM2h4eKHS9lpEOw%3D%3D&cookie21=URm48syIYB3rzvI4Dim4&cookie15=V32FPkk%2Fw0dUvg%3D%3D&existShop=false&pas=0&cookie14=UoTbmEhTkdvusA%3D%3D&tag=8&lng=zh_CN"}
