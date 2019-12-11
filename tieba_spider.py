@@ -67,9 +67,9 @@ if __name__ == "__main__":
     page_end = int(input('请输入终止页码\n'))
 
     url = r'http://tieba.baidu.com/f?'
-    path_userAgent = r'H:\MyPythonCode\WebSpider\urlStudy_doc\UserAgentLib.txt'
-    path_proxy = r'H:\MyPythonCode\WebSpider\urlStudy_doc\ProxyLib.txt'
-    path_header = r'H:\MyPythonCode\WebSpider\urlStudy_doc\WebHeader_baidu.txt'
+    path_userAgent = r'.\urlStudy_doc\UserAgentLib.txt'
+    path_proxy = r'.\urlStudy_doc\ProxyLib.txt'
+    path_header = r'.\urlStudy_doc\WebHeader_baidu.txt'
     path_phpFile = r'E:\phpStudy\WWW\Demo\tieba_spider'
 
     get_spider(url, req_str, page_ini, page_end,
