@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e72c056-26de-4aa1-9248-3f6058e7ba9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/youdao_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tieba_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tieba_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urllib_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/urllib_func.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -39,7 +48,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.tieba_spider">
     <configuration name="tieba_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WebSpider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,9 +70,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="youdao_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WebSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/youdao_spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.tieba_spider" />
+        <item itemvalue="Python.youdao_spider" />
         <item itemvalue="Python.tieba_spider" />
       </list>
     </recent_temporary>
@@ -126,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575994435808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify the paths of some files">
+      <created>1576397819839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576397819839</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -163,14 +201,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575825014324" />
-    <state x="598" y="109" key="CommitChangelistDialog2" timestamp="1575994435025">
+    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2" timestamp="1576399512480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575994435025" />
-    <state x="184" y="85" width="1536" height="832" key="DiffContextDialog" timestamp="1576397621108">
+    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576399512480" />
+    <state x="184" y="85" width="1536" height="832" key="DiffContextDialog" timestamp="1576399288697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="85" width="1536" height="832" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576397621108" />
+    <state x="184" y="85" width="1536" height="832" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576399288697" />
     <state x="601" y="443" key="FileChooserDialogImpl" timestamp="1575944616442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -187,22 +225,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="791" y="220" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575940878242" />
-    <state width="1898" height="168" key="GridCell.Tab.0.bottom" timestamp="1576047790925">
+    <state width="1898" height="168" key="GridCell.Tab.0.bottom" timestamp="1576399339310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576047790925" />
-    <state width="1898" height="168" key="GridCell.Tab.0.center" timestamp="1576047790925">
+    <state width="1898" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339310" />
+    <state width="1898" height="168" key="GridCell.Tab.0.center" timestamp="1576399339309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576047790925" />
-    <state width="1898" height="168" key="GridCell.Tab.0.left" timestamp="1576047790925">
+    <state width="1898" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
+    <state width="1898" height="168" key="GridCell.Tab.0.left" timestamp="1576399339309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576047790925" />
-    <state width="1898" height="168" key="GridCell.Tab.0.right" timestamp="1576047790925">
+    <state width="1898" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
+    <state width="1898" height="168" key="GridCell.Tab.0.right" timestamp="1576399339309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576047790925" />
+    <state width="1898" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
     <state x="799" y="229" key="RollbackChangesDialog" timestamp="1575944661774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -219,18 +257,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="435" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575993018177" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575994492489">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576397824182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575994492489" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576397824182" />
     <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1576306076644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576306076644" />
-    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575944677410">
+    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576397906962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575944677410" />
+    <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576397906962" />
     <state x="744" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1575993497628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
