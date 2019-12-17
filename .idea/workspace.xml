@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e72c056-26de-4aa1-9248-3f6058e7ba9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/urlStudy_doc/FormData_youdao.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urlStudy_doc/WebHeader_youdao.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/youdao_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tieba_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tieba_spider.py" afterDir="false" />
@@ -48,7 +50,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.tieba_spider">
+  <component name="RunManager" selected="Python.youdao_spider">
     <configuration name="tieba_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WebSpider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tieba_spider" />
         <item itemvalue="Python.youdao_spider" />
+        <item itemvalue="Python.tieba_spider" />
         <item itemvalue="Python.tieba_spider" />
       </list>
     </recent_temporary>
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576397819839</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="move some functions from the file: tieba_spider.py to urllib_func.py">
+      <created>1576399601652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576399601652</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -194,17 +203,18 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="add import time in json_test.py" />
     <MESSAGE value="modify the paths of some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify the paths of some files" />
+    <MESSAGE value="move some functions from the file: tieba_spider.py to urllib_func.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="move some functions from the file: tieba_spider.py to urllib_func.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575825014324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575825014324" />
-    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2" timestamp="1576399512480">
+    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2" timestamp="1576399600807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576399512480" />
+    <state x="598" y="109" width="1073" height="822" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576399600807" />
     <state x="184" y="85" width="1536" height="832" key="DiffContextDialog" timestamp="1576399288697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,22 +235,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="791" y="220" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575940878242" />
-    <state width="1898" height="168" key="GridCell.Tab.0.bottom" timestamp="1576399339310">
+    <state width="1898" height="168" key="GridCell.Tab.0.bottom" timestamp="1576415309113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339310" />
-    <state width="1898" height="168" key="GridCell.Tab.0.center" timestamp="1576399339309">
+    <state width="1898" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576415309113" />
+    <state width="1898" height="168" key="GridCell.Tab.0.center" timestamp="1576415309112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
-    <state width="1898" height="168" key="GridCell.Tab.0.left" timestamp="1576399339309">
+    <state width="1898" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576415309112" />
+    <state width="1898" height="168" key="GridCell.Tab.0.left" timestamp="1576415309110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
-    <state width="1898" height="168" key="GridCell.Tab.0.right" timestamp="1576399339309">
+    <state width="1898" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576415309110" />
+    <state width="1898" height="168" key="GridCell.Tab.0.right" timestamp="1576415309113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576399339309" />
+    <state width="1898" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576415309113" />
     <state x="799" y="229" key="RollbackChangesDialog" timestamp="1575944661774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="435" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575993018177" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576397824182">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576399664749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576397824182" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576399664749" />
     <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1576306076644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

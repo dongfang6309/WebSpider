@@ -1,0 +1,13 @@
+{"i": "",
+"from": "AUTO",
+"to": "AUTO",
+"smartresult": "dict",
+"client": "fanyideskweb",
+"salt": "15764000933248",
+"sign": "62697d3f23072ad4c41bb5839cb5ef80",
+"ts": "1576400093324",
+"bv": "1b6a302b48b06158238e3c036feb6ba1",
+"doctype": "json",
+"version": "2.1",
+"keyfrom": "fanyi.web",
+"action": "FY_BY_REALTlME"}

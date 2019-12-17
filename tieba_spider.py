@@ -24,7 +24,7 @@ def get_spider(url, req_str, page_ini, page_end,
         req_piny = req_piny + each[0]
     for page in range(page_ini, page_end + 1):
         url_tem = get_url(url, req_str, page)
-        html_code_temp = urf.get_html_code(url_tem, web_header, url_opener)
+        html_code_temp = urf.GetHtmlCode(url_tem, web_header, url_opener).get_method()
         path_phpFile_tem = path_phpFile + r'\%s_tieba_page%d.php' % (req_piny, page)
         print('正在下载%s贴吧第%d页' % (req_str, page))
         urf.write_html_code(html_code_temp, path_phpFile_tem)
