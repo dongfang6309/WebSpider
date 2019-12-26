@@ -6,11 +6,12 @@ import json
 import time
 import urllib_func as urf
 from pypinyin import pinyin, Style
+import socket
 
 
 def get_url(url, req_str, page):
     wd = {'kw': req_str}
-    url_tem = url + urllib.parse.urlencode(wd) + '&pn=' + str((page-1)*50)
+    url_tem = url + urllib.parse.urlencode(wd) + '&pn=' + str((page - 1) * 50)
     return url_tem
 
 
@@ -39,7 +40,12 @@ if __name__ == "__main__":
     path_userAgent = r'.\urlStudy_doc\UserAgentLib.txt'
     path_proxy = r'.\urlStudy_doc\ProxyLib.txt'
     path_header = r'.\urlStudy_doc\WebHeader_baidu.txt'
-    path_phpFile = r'D:\phpStudy\WWW\Demo\jiahao_test1'
+    if socket.gethostbyname_ex(socket.gethostname())[-1][1] == '192.168.0.102' \
+            and socket.gethostname() == 'Admin-pc':
+        path_phpFile = r'D:\phpStudy\WWW\Demo\jiahao_test1'
+    elif socket.gethostbyname_ex(socket.gethostname())[-1][1] == '222.205.52.158' \
+            and socket.gethostname() == 'ZhangJiahao-pc':
+        path_phpFile = r'E:\phpStudy\WWW\Demo\jiahao_test1'
 
     get_spider(url, req_str, page_ini, page_end,
                path_header, path_userAgent, path_proxy, path_phpFile)
