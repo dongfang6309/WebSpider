@@ -4,6 +4,8 @@ import urllib.parse
 import re
 import json
 import random
+import time
+import hashlib
 
 
 def user_agent(path_userAgent):
@@ -26,18 +28,37 @@ def user_proxy(path_proxy):
     return userProxy, userProxyLib
 
 
+def read_txt2json(path_txt):
+    file_txt = open(path_txt, 'r')
+    txt_trans = '{'
+    each: str
+    for each in file_txt.readlines():
+        each = '\"' + each
+        ls_each = list(each)
+        ls_each.remove(' ')
+        ls_each.insert(each.find(':'), '\"')
+        each = ''.join(ls_each)
+        ls_each = list(each)
+        ls_each.insert(each.find(':') + 1, '\"')
+        each = ''.join(ls_each)
+        each = each[0:len(each) - 1]
+        each = each + '\"'
+        txt_trans = txt_trans + each + ','
+    txt_trans = txt_trans[0:len(txt_trans) - 1] + '}'
+    file_txt.close()
+    return json.loads(txt_trans)
+
+
 def get_header_info(path_header, path_userAgent=None, path_proxy=None):
-    file_header = open(path_header, 'r')
-    WebHeader: str = file_header.read()
-    web_header = json.loads(WebHeader)
-    file_header.close()
+    web_header = read_txt2json(path_header)
     if path_userAgent is not None:
         userAgent, userAgentLib = user_agent(path_userAgent)
         # web_header['User-Agent'] = userAgent
     if path_proxy is not None:
         userProxy, userProxyLib = user_proxy(path_proxy)
         proxy_handler = urllib.request.ProxyHandler(userProxy)
-        # url_opener = urllib.request.build_opener(proxy_handler)
+        url_opener = urllib.request.build_opener(proxy_handler)
+        print(userProxy)
     http_handler = urllib.request.HTTPHandler()
     url_opener = urllib.request.build_opener(http_handler)
     return web_header, url_opener
@@ -57,12 +78,21 @@ class GetHtmlCode(object):
         html_code = response.read()
         return html_code
 
+    def form_data_encryption(self, req_str):
+        ts = str(int(time.time() * 1000))
+        salt = ts + str(random.randint(1, 10))
+        sign = hashlib.md5(("fanyideskweb" + req_str + salt +
+                           "n%A-rKaT5fb[Gy?;N5@Tj").encode('utf-8')).hexdigest()
+        return {"ts": ts,
+                "salt": salt,
+                "sign": sign}
+
     def post_method(self, req_str, path_formData):
-        file_formData = open(path_formData, 'r')
-        FormData = file_formData.read()
-        file_formData.close()
-        form_data = json.loads(FormData)
+        form_data = read_txt2json(path_formData)
         form_data['i'] = req_str
+        post_data = self.form_data_encryption(req_str)
+        for key, value in post_data.items():
+            form_data[key] = post_data[key]
         data = urllib.parse.urlencode(form_data).encode(encoding='utf8')
         req = urllib.request.Request(self.url, data=data, headers=self.web_header)
         response = urllib.request.urlopen(req)
