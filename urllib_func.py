@@ -53,7 +53,7 @@ def get_header_info(path_header, path_userAgent=None, path_proxy=None):
     web_header = read_txt2json(path_header)
     if path_userAgent is not None:
         userAgent, userAgentLib = user_agent(path_userAgent)
-        # web_header['User-Agent'] = userAgent
+        web_header['User-Agent'] = userAgent
     if path_proxy is not None:
         userProxy, userProxyLib = user_proxy(path_proxy)
         proxy_handler = urllib.request.ProxyHandler(userProxy)
@@ -79,10 +79,11 @@ class GetHtmlCode(object):
         return html_code
 
     def form_data_encryption(self, req_str):
-        ts = str(int(time.time() * 1000))
-        salt = ts + str(random.randint(1, 10))
+        ts = str(int(time.time() * 1000))  # 毫秒时间戳
+        salt = ts + str(random.randint(1, 10))  # 加密用的盐
         sign = hashlib.md5(("fanyideskweb" + req_str + salt +
                            "n%A-rKaT5fb[Gy?;N5@Tj").encode('utf-8')).hexdigest()
+        # 签名字符串
         return {"ts": ts,
                 "salt": salt,
                 "sign": sign}
