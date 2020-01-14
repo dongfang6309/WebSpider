@@ -1,0 +1,10 @@
+"change_key": ["from", "to"]
+中文: zh-CHS
+英语: en
+日语: ja
+韩语: ko
+法语: fr
+德语: de
+俄语: ru
+西班牙语: es
+: AUTO
