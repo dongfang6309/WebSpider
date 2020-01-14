@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e72c056-26de-4aa1-9248-3f6058e7ba9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/urlStudy_doc/FormData_youdao2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlStudy_doc/WebHeader_youdao.txt" beforeDir="false" afterPath="$PROJECT_DIR$/urlStudy_doc/WebHeader_youdao.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/urllib_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/urllib_func.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youdao_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/youdao_spider.py" afterDir="false" />
     </list>
@@ -208,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577545155009</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add FormData_youdao2.txt instead of FormData_youdao.txt to crawl the website:fanyi.youdao.com&#10;Delete the &quot;Content-Length&quot; in WebHeader_youdao.txt to avoid the error: no response from the website&#10;Use the user agent and proxy items to craw the fanyi.youdao.com website and modify the output format of the crawling results in youdao_spider.py&#10;Add and modify some comments in urllib_func.py">
+      <created>1577591861069</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1577591861069</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -241,7 +246,8 @@
     <MESSAGE value="move some functions from the file: tieba_spider.py to urllib_func.py" />
     <MESSAGE value="Use the methods: socket.gethostname etc. to get the id and ip of the using PC so as to specific different php-working dirs on different PCs" />
     <MESSAGE value="Modify the reading rules of a json file: Delete the punctuation \&quot; in the *.txt files &#10;Modify the spider mechanism on website:fanyi.youdao.com and the corresponding files e.g., urllib_func.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify the reading rules of a json file: Delete the punctuation \&quot; in the *.txt files &#10;Modify the spider mechanism on website:fanyi.youdao.com and the corresponding files e.g., urllib_func.py" />
+    <MESSAGE value="Add FormData_youdao2.txt instead of FormData_youdao.txt to crawl the website:fanyi.youdao.com&#10;Delete the &quot;Content-Length&quot; in WebHeader_youdao.txt to avoid the error: no response from the website&#10;Use the user agent and proxy items to craw the fanyi.youdao.com website and modify the output format of the crawling results in youdao_spider.py&#10;Add and modify some comments in urllib_func.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add FormData_youdao2.txt instead of FormData_youdao.txt to crawl the website:fanyi.youdao.com&#10;Delete the &quot;Content-Length&quot; in WebHeader_youdao.txt to avoid the error: no response from the website&#10;Use the user agent and proxy items to craw the fanyi.youdao.com website and modify the output format of the crawling results in youdao_spider.py&#10;Add and modify some comments in urllib_func.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575825014324">
@@ -252,18 +258,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="723" y="272" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577373224595" />
-    <state x="227" y="205" width="561" height="426" key="#xdebugger.evaluate" timestamp="1577543230354">
+    <state x="122" y="473" width="561" height="426" key="#xdebugger.evaluate" timestamp="1577624887437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="227" y="205" width="561" height="426" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1577543230354" />
-    <state x="301" y="54" width="1073" height="822" key="CommitChangelistDialog2" timestamp="1577545153690">
+    <state x="122" y="473" width="561" height="426" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1577624887437" />
+    <state x="283" y="157" width="1073" height="822" key="CommitChangelistDialog2" timestamp="1577591860233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="54" width="1073" height="822" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577545153690" />
-    <state x="171" y="97" width="1536" height="832" key="DiffContextDialog" timestamp="1577544760196">
+    <state x="283" y="157" width="1073" height="822" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577591860233" />
+    <state x="171" y="97" width="1536" height="832" key="DiffContextDialog" timestamp="1578968662253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="171" y="97" width="1536" height="832" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577544760196" />
+    <state x="171" y="97" width="1536" height="832" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578968662253" />
     <state x="601" y="443" key="FileChooserDialogImpl" timestamp="1576810676532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,38 +286,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="791" y="220" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575940878242" />
-    <state width="1157" height="176" key="GridCell.Tab.0.bottom" timestamp="1577591247099">
+    <state width="1898" height="253" key="GridCell.Tab.0.bottom" timestamp="1577671977508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1157" height="176" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577591247099" />
-    <state width="1157" height="176" key="GridCell.Tab.0.center" timestamp="1577591247099">
+    <state width="1898" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977508" />
+    <state width="1898" height="253" key="GridCell.Tab.0.center" timestamp="1577671977508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1157" height="176" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577591247099" />
-    <state width="1157" height="176" key="GridCell.Tab.0.left" timestamp="1577591247099">
+    <state width="1898" height="253" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977508" />
+    <state width="1898" height="253" key="GridCell.Tab.0.left" timestamp="1577671977508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1157" height="176" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577591247099" />
-    <state width="1157" height="176" key="GridCell.Tab.0.right" timestamp="1577591247099">
+    <state width="1898" height="253" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977508" />
+    <state width="1898" height="253" key="GridCell.Tab.0.right" timestamp="1577671977508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1157" height="176" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577591247099" />
-    <state width="1898" height="253" key="GridCell.Tab.1.bottom" timestamp="1577544156854">
+    <state width="1898" height="253" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977508" />
+    <state width="1898" height="253" key="GridCell.Tab.1.bottom" timestamp="1577671977509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577544156854" />
-    <state width="1898" height="253" key="GridCell.Tab.1.center" timestamp="1577544156854">
+    <state width="1898" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977509" />
+    <state width="1898" height="253" key="GridCell.Tab.1.center" timestamp="1577671977509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577544156854" />
-    <state width="1898" height="253" key="GridCell.Tab.1.left" timestamp="1577544156854">
+    <state width="1898" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977509" />
+    <state width="1898" height="253" key="GridCell.Tab.1.left" timestamp="1577671977508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577544156854" />
-    <state width="1898" height="253" key="GridCell.Tab.1.right" timestamp="1577544156854">
+    <state width="1898" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977508" />
+    <state width="1898" height="253" key="GridCell.Tab.1.right" timestamp="1577671977509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1898" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577544156854" />
+    <state width="1898" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577671977509" />
     <state x="799" y="229" key="RollbackChangesDialog" timestamp="1575944661774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,18 +334,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="435" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575993018177" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1577545187388">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1577591910405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577545187388" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1577543136921">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577591910405" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1577613520077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1577543136921" />
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1577544172634">
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1577613520077" />
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1578968513924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577544172634" />
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578968513924" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577374573748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

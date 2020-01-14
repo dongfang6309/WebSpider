@@ -29,20 +29,24 @@ def user_proxy(path_proxy):
 
 
 def read_txt2json(path_txt):
-    file_txt = open(path_txt, 'r')
+    file_txt = open(path_txt, 'rb')
     txt_trans = '{'
-    each: str
     for each in file_txt.readlines():
-        each = '\"' + each
-        ls_each = list(each)
-        ls_each.remove(' ')
-        ls_each.insert(each.find(':'), '\"')
-        each = ''.join(ls_each)
-        ls_each = list(each)
-        ls_each.insert(each.find(':') + 1, '\"')
-        each = ''.join(ls_each)
-        each = each[0:len(each) - 1]
-        each = each + '\"'
+        each = each.decode()
+        if each.find('[') and each.find(']') is not -1:
+            each = each[0:len(each) - 2]
+        else:
+            each = '\"' + each
+            ls_each = list(each)
+            ls_each.remove(' ')
+            ls_each.insert(each.find(':'), '\"')
+            each = ''.join(ls_each)
+            ls_each = list(each)
+            ls_each.insert(each.find(':') + 1, '\"')
+            each = ''.join(ls_each)
+            each = each[0:len(each) - 2]
+            # 'rb'读取文件时，最后换行符为两个: \r\n
+            each = each + '\"'
         txt_trans = txt_trans + each + ','
     txt_trans = txt_trans[0:len(txt_trans) - 1] + '}'
     file_txt.close()
@@ -88,12 +92,19 @@ class GetHtmlCode(object):
                 "salt": salt,
                 "sign": sign}
 
-    def post_method(self, req_str, path_formData):
+    def post_method(self, path_formData,
+                    change_dic, path_comp_table=None):
         form_data = read_txt2json(path_formData)
-        form_data['i'] = req_str
-        post_data = self.form_data_encryption(req_str)
+        # form_data['i'] = req_str
+        post_data = self.form_data_encryption(change_dic['i'])
         for key, value in post_data.items():
             form_data[key] = post_data[key]
+        for key, value in change_dic.items():
+            form_data[key] = change_dic[key]
+        if path_comp_table is not None:
+            comp_table = read_txt2json(path_comp_table)
+            for each_key in comp_table['change_key']:
+                form_data[each_key] = comp_table[form_data[each_key]]
         data = urllib.parse.urlencode(form_data).encode(encoding='utf8')
         req = urllib.request.Request(self.url, data=data, headers=self.web_header)
         response = urllib.request.urlopen(req)
